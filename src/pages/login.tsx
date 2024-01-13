@@ -15,11 +15,12 @@ export const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
-        <div>Login</div>
+        
       <form
         className="bg-white p-8 rounded shadow-md w-96"
         onSubmit={handleSubmit}
       >
+        <div>Login</div>
         <h2 className="text-2xl font-semibold mb-4">Sign Up</h2>
         <div className="mb-4">
           <label
