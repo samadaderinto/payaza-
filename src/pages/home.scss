@@ -1,0 +1,49 @@
+.hero-section {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 30px;
+    height: 400px;
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero-section h1,
+.hero-section--2 h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero-section p,
+.hero-section--2 p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-section button,
+.hero-section--2 button {
+    background-color: #007bff;
+    color: #000000;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero-section button:hover,
+.hero-section--2 button:hover {
+    background-color: #39628e;
+}
+
+
+.hero-section--2 {
+    background-color: transparent;
+    padding: 40px 0 30px 35%;
+    margin: 30px;
+    height: 400px;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
