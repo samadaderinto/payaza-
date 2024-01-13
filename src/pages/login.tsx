@@ -15,6 +15,7 @@ export const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
+        <div>Login</div>
       <form
         className="bg-white p-8 rounded shadow-md w-96"
         onSubmit={handleSubmit}

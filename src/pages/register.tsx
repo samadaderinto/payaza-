@@ -16,6 +16,7 @@ export const Register = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center">
+        <div>Sign Up</div>
       <form
         className="bg-white p-8 rounded shadow-md w-96"
         onSubmit={handleSubmit}
