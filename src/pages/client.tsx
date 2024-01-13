@@ -28,6 +28,17 @@ export const Client = () => {
         }}
       >
         <Link
+          to="/"
+          style={{
+            color: "#fff",
+            display: "flex",
+            width: "300px",
+            padding: "30px 40px",
+          }}
+        >
+          Home
+        </Link>
+        <Link
           to="/client/dashboard"
           style={{
             color: "#fff",
