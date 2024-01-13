@@ -1,4 +1,3 @@
-import CryptoJS from "crypto-js";
 import { useContext, useEffect } from "react";
 import { AppContextProvider } from "./data";
 import { useNavigate } from "react-router-dom";
@@ -11,21 +10,7 @@ export const checkEmail = (email: string) => {
   );
 };
 
-export const encryptAndStore = (key: string, data: string) => {
-  const ciphertext = CryptoJS.AES.encrypt(
-    data,
-    `${process.env.SECRET_KEY}`
-  ).toString();
-  localStorage.setItem(key, ciphertext);
-};
 
-export const decryptFromStorage = (key: string) => {
-  const ciphertext = localStorage.getItem(key);
-  if (!ciphertext) return null;
-
-  const bytes = CryptoJS.AES.decrypt(ciphertext, `${process.env.SECRET_KEY}`);
-  return bytes.toString(CryptoJS.enc.Utf8);
-};
 
 export const handleSubmit = (e: any) => {
   console.log(e);
